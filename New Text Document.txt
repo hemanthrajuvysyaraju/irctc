@@ -1,0 +1,10 @@
+-- select e.ename,e.sal,d.dname from emp e,dept d where d.deptno=e.deptno
+-- select distinct job from emp
+-- select ename, '$'||sal+sal*0.15 as salary from emp order by sal desc
+-- select ename||' '||job as employee_job from emp
+-- select ename||'('||job||')' as employee_job from emp
+-- select empno,ename,sal,to_char(hiredate,'MONTH DD,YYYY') from emp
+-- select ename,length(trim(ename)) as no_of_char from emp
+-- create table i213_stations(station_id char(9) primary key,station_name varchar(100));
+-- insert into i213_stations values('BZA','Vijayawada Junction'),('CHE','Srikakulam'),('VSKP','Vishakapatnam Junction'),
+-- ('TPTY','Tirupathi'),('RJY','Rajahmundry'),('OGL','Ongole'),('GDR','Gudur Junction'),('NLR','Nellore');

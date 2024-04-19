@@ -1,0 +1,41 @@
+#main-div
+{
+    border: 1px solid rgba(9, 171, 192, 0.507);
+    border-radius: 5%;
+    width: 75%;
+    height: 80%;
+    position: fixed;
+}
+#main-heading
+{
+    color: cornflowerblue;
+    font-weight: bolder;
+    margin-left: 30%;
+}
+#from,#to
+{
+    width: 100px;
+}
+#trainslist
+{
+    width:150px;
+}
+#screen
+{
+    align-content: center;
+    justify-content: space-evenly;
+}
+#passengerheader,thead,#td
+{
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(11, 243, 81, 0.438);
+    border-collapse: collapse;
+    padding: 10px;
+}
+#passengerheader
+{
+    width: fit-content;
+    height: fit-content;
+
+}
