@@ -39,7 +39,7 @@ public class AllStationServlet extends HttpServlet {
 		response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
 		response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization") ;
 		response.addHeader("Access-Control-Allow-Origin", "*");
-		Connection con;
+		Connection con=null;
 		PrintWriter out = response.getWriter();
 		response.setContentType("application/json");
 		try {
@@ -59,7 +59,7 @@ public class AllStationServlet extends HttpServlet {
 			}
 			obj.put("st_id",codearr);
 			obj.put("st_name",namearr);
-			System.out.println(obj);
+			JdbcUtilities.closeConnections(con, rs, st);
 			out.println(obj);
 			out.close();
 		}
