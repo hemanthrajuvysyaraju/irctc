@@ -8,3 +8,10 @@
 -- create table i213_stations(station_id char(9) primary key,station_name varchar(100));
 -- insert into i213_stations values('BZA','Vijayawada Junction'),('CHE','Srikakulam'),('VSKP','Vishakapatnam Junction'),
 -- ('TPTY','Tirupathi'),('RJY','Rajahmundry'),('OGL','Ongole'),('GDR','Gudur Junction'),('NLR','Nellore');
+-- create table i213_tickets(
+-- 	ticket_no int primary key,ticket_pnr_no numeric,ticket_travel_date date,ticket_from char(4),ticket_to char(4),
+-- 	ticket_class varchar(10),ticket_total numeric,ticket_nop int
+-- );
+-- create table i213_passengers(
+-- 	ticket_no int,psgr_name varchar(100),psgr_age int,psgr_gender char(6),psgr_berthpref varchar(20),foreign key(ticket_no) references i213_tickets
+-- );
