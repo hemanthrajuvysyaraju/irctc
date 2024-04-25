@@ -1,3 +1,9 @@
+html{
+    background-image: url("https://wallpapercave.com/wp/wp11879211.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 #main-div
 {
     border: 1px solid rgba(9, 171, 192, 0.507);
@@ -5,12 +11,17 @@
     width: 75%;
     height: 80%;
     position: fixed;
+    background-color: rgb(245, 245, 245, 75%);
+    overflow: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+
 }
 #main-heading
 {
     color: cornflowerblue;
     font-weight: bolder;
-    margin-left: 30%;
+    text-align: center;
 }
 #from,#to
 {
@@ -22,6 +33,7 @@
 }
 #screen
 {
+    display: flex;
     align-content: center;
     justify-content: space-evenly;
 }
@@ -35,7 +47,35 @@
 }
 #passengerheader
 {
+    position: relative;
     width: fit-content;
     height: fit-content;
 
+}
+#th
+{
+    text-align: center;
+    justify-content: space-between;
+}
+#from,#to
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px dashed tomato;
+    width: fit-content;
+}
+#bookingdiv
+{
+    
+    display: flex;
+    justify-content: center;
+}
+#passengerdiv
+{
+    display: flex;
+    flex-direction: row;
+}
+#addpassenger
+{
+    margin-top: 13%;
+    margin-left: 2%;
 }
